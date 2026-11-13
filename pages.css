@@ -1,0 +1,118 @@
+
+/* MULTI-PAGE FAMOUS XXL EXPERIENCE */
+:root{--page-gold:#d7ad43;--page-amber:#e8792e;--page-black:#080807;--page-cream:#f4eddf}
+body{overflow-x:hidden;background:var(--page-black)}
+.site-header{position:sticky;top:0;z-index:50;background:#080807ed;backdrop-filter:blur(14px)}
+.main-nav a[aria-current="page"]{color:var(--page-gold)}
+.footer{gap:28px;flex-wrap:wrap}
+.footer-social{display:flex;gap:18px;flex-wrap:wrap}
+.footer-social a{font-size:8px;letter-spacing:1px;color:#a9a49b}
+.footer-social a:hover{color:var(--page-gold)}
+.home-hero{min-height:680px;height:calc(100svh - 110px);max-height:820px;position:relative;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:4vw;padding:55px 9vw 80px;background:radial-gradient(ellipse at 72% 40%,#b778292c,transparent 42%),linear-gradient(120deg,#080807,#171109 60%,#090807);overflow:hidden}
+.home-hero:before{content:"";position:absolute;width:620px;height:620px;border:1px solid #d7ad4320;border-radius:50%;right:7%;top:3%;box-shadow:0 0 0 38px #d7ad4308,0 0 0 90px #d7ad4305;pointer-events:none}
+.home-copy{position:relative;z-index:2}.home-copy h1,.page-hero h1,.music-page-head h1,.video-page-head h1,.gallery-page-head h1,.news-page-head h1,.booking-hero h1{font:900 clamp(82px,10vw,150px)/.78 "Barlow Condensed",sans-serif;letter-spacing:-2px;margin:30px 0}
+.home-copy h1 span,.page-hero h1 span,.music-page-head h1 span,.video-page-head h1 span,.gallery-page-head h1 span,.news-page-head h1 span,.booking-hero h1 span{background:linear-gradient(100deg,#f5d47d,#c28b2b 55%,#ffe6a6);color:transparent;background-clip:text;-webkit-background-clip:text}
+.home-tagline{font-size:11px;letter-spacing:4px;color:#e0d6c3}.home-intro{max-width:430px;color:#a9a49b;font-size:14px;line-height:1.8;margin-top:24px}
+.home-photo{height:min(560px,75vh);min-height:390px;position:relative;z-index:1;border:1px solid #d7ad4380;padding:11px;transform:rotate(1deg);box-shadow:20px 25px 70px #000b,0 0 45px #d7ad4318}
+.home-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block}
+.photo-index{position:absolute;right:-15px;bottom:28px;background:var(--page-gold);color:#090807;padding:12px 17px;font:800 12px "Barlow Condensed";letter-spacing:2px}
+.home-meta{position:absolute;bottom:22px;left:9vw;right:9vw;display:flex;justify-content:space-between;color:#777269;font-size:8px;letter-spacing:1.5px}
+.sound-marquee{overflow:hidden;background:linear-gradient(90deg,#b77c22,#e4b74a,#a86d1d);color:#090806;padding:15px 0;white-space:nowrap}
+.marquee-track{display:flex;gap:36px;width:max-content;align-items:center;animation:page-marquee 32s linear infinite;font:800 15px "Barlow Condensed";letter-spacing:2.5px}.marquee-track i{font-style:normal}
+@keyframes page-marquee{to{transform:translateX(-50%)}}
+.home-feature{padding:100px 9vw;background:#0d0c0a}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
+.feature-card{min-height:350px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid #d7ad4335;position:relative;overflow:hidden;transition:transform .35s,border-color .35s}
+.feature-card:hover{transform:translateY(-8px);border-color:var(--page-gold)}
+.feature-card:after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent,#050505aa);pointer-events:none}
+.feature-card>*{position:relative;z-index:1}.feature-card>span,.feature-card>b{font-size:9px;letter-spacing:2px;color:#e6bf62}
+.feature-card h2{font:900 65px/.8 "Barlow Condensed";margin:0;color:#f5eddd}
+.feature-music{background:radial-gradient(circle at 70% 30%,#9d642b,#241407 65%,#0a0907)}
+.feature-video{background:radial-gradient(circle at 70% 30%,#514022,#15120b 65%,#090807)}
+.feature-gallery{background:radial-gradient(circle at 70% 30%,#6c3d20,#1c100b 65%,#090807)}
+.home-booking{padding:100px 9vw;background:radial-gradient(ellipse at 80% 40%,#a76a241f,transparent 42%),#11100e}
+.home-booking h2,.music-cta h2,.video-bottom h2{font:900 clamp(60px,8vw,105px)/.82 "Barlow Condensed";margin:25px 0 35px}
+.home-booking h2 span,.music-cta h2 span,.video-bottom h2 span{color:var(--page-gold)}
+/* About page */
+.page-hero{min-height:590px;display:grid;grid-template-columns:1fr .8fr;align-items:center;gap:6vw;padding:70px 9vw;background:radial-gradient(ellipse at 80% 45%,#a46b2c30,transparent 42%),#0d0b08;overflow:hidden}
+.page-hero-copy p:last-child,.music-page-head>p:last-of-type,.video-page-head>p:last-of-type,.gallery-page-head>p:last-of-type,.news-page-head>p:last-of-type,.booking-hero>div>p:last-child{color:#aaa49a;line-height:1.8;max-width:470px}
+.page-hero img{width:100%;height:490px;object-fit:cover;object-position:center 25%;border:1px solid #d7ad4370;padding:9px}
+.editorial-section{padding:100px 9vw;background:#11100e}
+.editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw}
+.editorial-grid h2,.booking-content h2{font:900 clamp(55px,7vw,90px)/.85 "Barlow Condensed";margin:0}
+.editorial-grid h2 span,.booking-content h2 span{color:var(--page-gold)}
+.editorial-grid p{color:#aaa49a;line-height:1.9;font-size:14px}.editorial-grid .lead{font-size:21px;color:#f2ecdf;line-height:1.5}
+.about-quote{padding:90px 9vw;text-align:center;background:linear-gradient(110deg,#2a1b0c,#090807 55%,#201408);border-block:1px solid #d7ad4333}
+.about-quote>span{font:900 90px "Barlow Condensed";color:#d7ad4350}
+.about-quote blockquote{font:800 clamp(24px,4vw,48px) "Barlow Condensed";letter-spacing:2px;margin:10px 0 18px}
+.about-quote small{font-size:9px;letter-spacing:2px;color:var(--page-gold)}
+.brand-panel{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center;background:#080807;padding:35px;border:1px solid #d7ad4333}
+.brand-panel img{width:100%;max-height:250px;object-fit:contain;background:#000}
+.brand-panel h2{font:900 55px/.85 "Barlow Condensed"}.brand-panel h2 span{color:var(--page-gold)}.brand-panel p{color:#aaa49a;line-height:1.8}
+/* Music page */
+.music-page-head,.video-page-head,.gallery-page-head,.news-page-head{padding:100px 9vw 80px;background:radial-gradient(ellipse at 80% 30%,#b7782928,transparent 40%),#0c0a07}
+.music-page-head h1,.video-page-head h1,.gallery-page-head h1,.news-page-head h1{font-size:clamp(75px,10vw,140px)}
+.platform-row{display:flex;gap:15px;flex-wrap:wrap;margin-top:30px}
+.platform-row a{border:1px solid #d7ad4366;padding:14px 18px;color:#e4bd5d;font-size:9px;font-weight:700;letter-spacing:1.5px}
+.platform-row a:hover{background:var(--page-gold);color:#090807}
+.release-section{padding:80px 9vw 110px;background:#10100e}
+.release-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.release-card{padding-bottom:22px;border-bottom:1px solid #d7ad4340}
+.release-art{height:300px;display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;overflow:hidden;border:1px solid #d7ad4335}
+.release-art:before,.release-art:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #e9c36b50;transform:rotate(45deg)}
+.release-art:after{width:160px;height:160px;transform:rotate(0)}
+.release-art span{font:900 82px "Barlow Condensed";color:#f3d17b;z-index:1}
+.release-art small{font-size:10px;letter-spacing:3px;color:#f4e2b4;z-index:1}
+.art-one{background:radial-gradient(circle,#8b5526,#211407 70%)}.art-two{background:radial-gradient(circle,#45512f,#11170d 70%)}.art-three{background:radial-gradient(circle,#6a3021,#180b08 70%)}
+.release-card h2{font:800 27px "Barlow Condensed";margin:18px 0 5px}.release-card p{font-size:11px;color:#9e988d}.release-card>a{display:inline-block;margin-top:13px;font-size:9px;letter-spacing:1.3px;color:var(--page-gold)}
+.music-cta,.video-bottom{padding:85px 9vw;background:radial-gradient(ellipse at 85% 40%,#bd7b251f,transparent 40%),#090807}
+/* Videos page */
+.screen-feature{padding:50px 9vw 100px;background:#10100e}
+.screen-frame{height:480px;position:relative;background:#000;border:1px solid #d7ad4380;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.screen-frame>img{width:100%;height:100%;object-fit:contain;position:absolute;inset:0}
+.screen-shade{position:absolute;inset:0;background:linear-gradient(90deg,#0009,transparent 70%),linear-gradient(0deg,#000b,transparent 45%)}
+.screen-play{position:relative;z-index:2;width:78px;height:78px;border-radius:50%;display:grid;place-items:center;background:var(--page-gold);color:#090807;font-size:22px;padding-left:4px;box-shadow:0 0 0 12px #d7ad4326}
+.screen-title{position:absolute;z-index:2;left:30px;bottom:25px}.screen-title small{font-size:9px;letter-spacing:2px;color:var(--page-gold)}.screen-title h2{font:900 40px/.85 "Barlow Condensed";margin:10px 0}
+.screen-description{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center;padding-top:30px}.screen-description p{font-size:13px;line-height:1.8;color:#aaa49a;max-width:500px}
+/* Gallery page */
+.gallery-wall{padding:20px 9vw 110px;background:#0b0a08}
+.gallery-masonry{columns:3;column-gap:16px}
+.gallery-photo{break-inside:avoid;margin:0 0 16px;position:relative;overflow:hidden;border:1px solid #d7ad4335;background:#17110a}
+.gallery-photo img{display:block;width:100%;height:auto;max-height:650px;object-fit:cover;transition:transform .7s,filter .7s}
+.gallery-photo:hover img{transform:scale(1.04);filter:saturate(1.15)}
+.gallery-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:35px 18px 16px;background:linear-gradient(0deg,#000c,transparent);display:flex;justify-content:space-between;gap:10px;font-size:8px;letter-spacing:1.5px;color:#e9c36b}
+.gallery-photo figcaption b{font-weight:600}
+/* News */
+.news-empty{padding:70px 9vw 110px;background:#10100e;display:grid;grid-template-columns:.85fr 1fr;gap:8vw;align-items:center}
+.news-feature-image{height:440px;border:1px solid #d7ad4366;padding:9px}.news-feature-image img{width:100%;height:100%;object-fit:cover}
+.news-empty h2{font:900 clamp(42px,5vw,70px)/.9 "Barlow Condensed"}.news-empty p{font-size:13px;line-height:1.9;color:#aaa49a}
+/* Booking page */
+.booking-hero{padding:80px 9vw;display:grid;grid-template-columns:1fr .75fr;gap:8vw;align-items:center;background:radial-gradient(ellipse at 80% 40%,#bd76262b,transparent 45%),#0c0a08}
+.booking-hero h1{font-size:clamp(80px,9vw,130px)}.booking-hero img{width:100%;height:480px;object-fit:cover;border:1px solid #d7ad4370;padding:9px}
+.booking-content{padding:100px 9vw;display:grid;grid-template-columns:1fr 1fr;gap:9vw;background:#11100e}
+.booking-content p{font-size:13px;line-height:1.9;color:#aaa49a;max-width:470px}
+.booking-links{border-top:1px solid #d7ad4355}
+.booking-links a{display:flex;justify-content:space-between;gap:15px;padding:22px 0;border-bottom:1px solid #ffffff22;font-size:10px;letter-spacing:1.5px}
+.booking-links a span{color:#999187}.booking-links a b{color:var(--page-gold)}
+@media(max-width:850px){
+ .home-hero{height:auto;max-height:none;min-height:0;grid-template-columns:1fr;padding:65px 7vw 75px;gap:35px}
+ .home-copy h1{font-size:clamp(90px,20vw,145px)}
+ .home-photo{height:430px;min-height:0;width:min(100%,440px);justify-self:center}
+ .home-meta{left:7vw;right:7vw}.home-meta span:nth-child(2){display:none}
+ .feature-grid,.release-grid{grid-template-columns:1fr 1fr}
+ .feature-card:last-child{grid-column:span 2}
+ .page-hero,.booking-hero{grid-template-columns:1fr;padding:65px 7vw}
+ .page-hero img,.booking-hero img{height:400px;max-width:500px}
+ .editorial-grid,.brand-panel,.screen-description,.news-empty,.booking-content{grid-template-columns:1fr;gap:35px}
+ .gallery-masonry{columns:2}
+ .music-page-head,.video-page-head,.gallery-page-head,.news-page-head{padding:75px 7vw 60px}
+ .release-section,.screen-feature,.gallery-wall,.news-empty,.booking-content,.editorial-section{padding-left:7vw;padding-right:7vw}
+}
+@media(max-width:560px){
+ .home-photo{height:360px}.home-copy h1{font-size:clamp(80px,21vw,115px)}
+ .feature-grid,.release-grid{grid-template-columns:1fr}.feature-card:last-child{grid-column:auto}
+ .feature-card{min-height:270px}
+ .gallery-masonry{columns:1}.gallery-photo{max-width:100%}
+ .screen-frame{height:300px}.screen-title h2{font-size:30px}.screen-title{left:18px;bottom:18px}
+ .booking-hero img,.page-hero img{height:340px}
+ .footer-social{width:100%}
+}
